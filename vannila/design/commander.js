@@ -74,9 +74,9 @@ function cancelOrderCommand(id) {
 const manager = new OrderManager();
 
 console.log(
-    manager.execute(placeOrderCommand({ order: "Pad Thai", id: "1234" })),
-    manager.execute(trackOrderCommand('1234')),
-    manager.execute(cancelOrderCommand('1234'))
+    manager.execute(new placeOrderCommand({ order: "Pad Thai", id: "1234" })),
+    manager.execute(new trackOrderCommand('1234')),
+    manager.execute(new cancelOrderCommand('1234'))
 )
 
 
